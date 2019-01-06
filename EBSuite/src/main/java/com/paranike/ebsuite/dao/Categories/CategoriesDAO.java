@@ -20,4 +20,10 @@ public class CategoriesDAO implements CategoriesDAOIX {
 		return retList;
 	}
 
+	@Override
+	public void add(CategoriesDO categoriesDO) {
+		categoriesRepo.save(categoriesDO);
+
+	}
+
 }

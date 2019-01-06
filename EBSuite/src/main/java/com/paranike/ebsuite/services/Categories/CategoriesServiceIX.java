@@ -9,4 +9,7 @@ import com.paranike.ebsuite.common.models.CategoriesDO;
 @Service
 public interface CategoriesServiceIX {
 	public List<CategoriesDO> getAllCategories();
+
+	public void addCategory(CategoriesDO categoriesDO);
+
 }

@@ -19,4 +19,9 @@ public class CategoriesServiceImpl implements CategoriesServiceIX {
 		return categoriesDao.getAllCategories();
 	}
 
+	@Override
+	public void addCategory(CategoriesDO categoriesDO) {
+		categoriesDao.add(categoriesDO);
+	}
+
 }

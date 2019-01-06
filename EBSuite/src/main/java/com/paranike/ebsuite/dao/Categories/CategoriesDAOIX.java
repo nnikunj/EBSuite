@@ -11,4 +11,6 @@ public interface CategoriesDAOIX {
 
 	public List<CategoriesDO> getAllCategories();
 
+	public void add(CategoriesDO categoriesDO);
+
 }
