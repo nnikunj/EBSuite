@@ -3,6 +3,7 @@ package com.paranike.ebsuite.common.models;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -21,7 +22,7 @@ public class SubCategoriesDO extends BaseDO {
 	@Column(name = "DESCRIPTION", nullable = false, length = 512)
 	private String description;
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "CATEGORY_FK")
 	private CategoriesDO category;
 
